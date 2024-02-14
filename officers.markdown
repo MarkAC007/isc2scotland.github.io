@@ -5,23 +5,29 @@ permalink: /Officers/
 ---
 
 ### President
-
-### Vice President
-
-### Treasurer
-
-### Secretary
-
-### Membership Chair
-
+[Manish Shah](https://linkedin.com/in/manishcissp){:target="\_blank"}
 <br />
-
+### Vice President
+[James Kwaan](https://linkedin.com/in/james-k-5201384){:target="\_blank"}
+<br />
+### Secretary
+<br />
+<br />
+### Membership Chair
+[Gary Scullion](https://linkedin.com/in/gary-scullion-ism){:target="\_blank"}
+<br />
+### Treasurer
+[Mark Almeida-Cardy](https://linkedin.com/in/mark-ac){:target="\_blank"}
+<br />
+<br />
+<br />
 ## Meetings
 
-### Officers Meetings
+### ISC2 Scotland Chapter Officers Meetings
 
 <details markdown="1">
 <summary>Dates and Times</summary>
+- Thu, 25 Jan '24 18:00
 - Thu, 04 Jan '24 18:00
 - Thu, 21 Dec '23 18:00
 - Thu, 07 Dec '23 18:00
@@ -39,7 +45,7 @@ permalink: /Officers/
 
 <br />
 
-### ISC2 Scotland LinkedIn Group Members
+### ISC2 Scotland Members Meetings
 
 <details markdown="1">
 <summary>Dates and Times</summary>
