@@ -1,6 +1,8 @@
 title: ISC2 Scotland Chapter
 description: Official website for the ISC2 Scotland Chapter - connecting cybersecurity professionals across Scotland.
+url: "https://isc2scotland.github.io"
 baseurl: "" # the subpath of your site, e.g. /blog
+repository: isc2scotland/isc2scotland.github.io
 
 # Build settings
 theme: minima
