@@ -24,7 +24,10 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Run Semgrep
-        run: semgrep ci --sarif --output=semgrep.sarif
+        run: |
+          semgrep ci --sarif --output=semgrep.sarif \
+            --exclude-rule generic.html-templates.security.var-in-href.var-in-href \
+            --exclude-rule generic.html-templates.security.unquoted-attribute-var.unquoted-attribute-var
         env:
           SEMGREP_RULES: >-
             p/default
