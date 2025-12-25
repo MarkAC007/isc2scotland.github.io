@@ -1,0 +1,44 @@
+name: License Compliance Check
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    - cron: '0 10 * * 1'  # Weekly on Mondays at 10am UTC
+
+permissions:
+  contents: read
+
+jobs:
+  license-check:
+    name: Check Licenses
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+          bundler-cache: true
+
+      - name: Install license_finder
+        run: gem install license_finder
+
+      - name: Check licenses
+        run: |
+          echo "## License Report" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+
+          # Generate license report
+          license_finder report --format=markdown >> $GITHUB_STEP_SUMMARY 2>/dev/null || true
+
+          # Check for problematic licenses (GPL, AGPL, etc.)
+          # Note: license_finder uses 'decisions' for approval workflow
+          # For now, just report - no blocking
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "License scan completed" >> $GITHUB_STEP_SUMMARY
